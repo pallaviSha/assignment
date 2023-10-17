@@ -30,5 +30,6 @@ struct ChapterContentView: View {
                     .multilineTextAlignment(.center)
             }
         }
+        .accessibilityIdentifier("chapterContent")
     }
 }

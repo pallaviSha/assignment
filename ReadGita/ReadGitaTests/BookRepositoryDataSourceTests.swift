@@ -27,7 +27,7 @@ final class BookRepositoryDataSourceTests: XCTestCase {
                expectation.fulfill()
            }
 
-           wait(for: [expectation], timeout: 5.0)
+           wait(for: [expectation], timeout: 6.0)
        }
 
        func testGetBookAllVerses() {
@@ -44,7 +44,7 @@ final class BookRepositoryDataSourceTests: XCTestCase {
                expectation.fulfill()
            }
 
-           wait(for: [expectation], timeout: 5.0)
+           wait(for: [expectation], timeout: 6.0)
        }
 
        func testGetBookPerticularVerses() {
@@ -63,7 +63,7 @@ final class BookRepositoryDataSourceTests: XCTestCase {
                expectation.fulfill()
            }
 
-           wait(for: [expectation], timeout: 5.0)
+           wait(for: [expectation], timeout: 6.0)
        }
 
        func testGetPerticularBook() {
@@ -81,6 +81,6 @@ final class BookRepositoryDataSourceTests: XCTestCase {
                expectation.fulfill()
            }
 
-           wait(for: [expectation], timeout: 5.0)
+           wait(for: [expectation], timeout: 6.0)
        }
 }

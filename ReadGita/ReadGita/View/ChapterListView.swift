@@ -48,6 +48,7 @@ struct ChapterListView: View {
                             }
                         }
                     }
+                    .accessibilityIdentifier("list")
                 case .loading:
                     LoadingView()
                 case .verseLoaded(let verse):
@@ -61,6 +62,7 @@ struct ChapterListView: View {
                             }
                         }
                     }
+                    .accessibilityIdentifier("verseList")
                 }
             }
             .padding(.top , 20)

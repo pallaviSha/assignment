@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BookRepositoryDataSource {
+struct BookRepositoryDataSource: BookRepositoryDataSourceProtocol {
 
     private func getHeaders() -> [String:String] {
         let headers = [

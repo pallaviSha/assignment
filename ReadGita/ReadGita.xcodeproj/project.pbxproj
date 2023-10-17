@@ -10,7 +10,6 @@
 		64A671F42AD96741007615B1 /* ReadGitaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A671F32AD96741007615B1 /* ReadGitaApp.swift */; };
 		64A671F82AD96743007615B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A671F72AD96743007615B1 /* Assets.xcassets */; };
 		64A671FB2AD96743007615B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A671FA2AD96743007615B1 /* Preview Assets.xcassets */; };
-		64A672052AD96744007615B1 /* ReadGitaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A672042AD96744007615B1 /* ReadGitaTests.swift */; };
 		64A6720F2AD96744007615B1 /* ReadGitaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6720E2AD96744007615B1 /* ReadGitaUITests.swift */; };
 		64A672112AD96744007615B1 /* ReadGitaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A672102AD96744007615B1 /* ReadGitaUITestsLaunchTests.swift */; };
 		64A672372AD967AE007615B1 /* BookRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6721E2AD967AE007615B1 /* BookRepositoryProtocol.swift */; };
@@ -27,12 +26,22 @@
 		64A672432AD967AE007615B1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6722E2AD967AE007615B1 /* GradientView.swift */; };
 		64A672442AD967AE007615B1 /* ChapterContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6722F2AD967AE007615B1 /* ChapterContentView.swift */; };
 		64A672452AD967AE007615B1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A672302AD967AE007615B1 /* LoadingView.swift */; };
-		64A672462AD967AE007615B1 /* ChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A672312AD967AE007615B1 /* ChapterView.swift */; };
 		64A672472AD967AE007615B1 /* ChapterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A672322AD967AE007615B1 /* ChapterListView.swift */; };
 		64A672482AD967AE007615B1 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A672332AD967AE007615B1 /* PageView.swift */; };
 		64A672492AD967AE007615B1 /* ChapterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A672352AD967AE007615B1 /* ChapterListViewModel.swift */; };
 		64A6724A2AD967AE007615B1 /* PageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A672362AD967AE007615B1 /* PageViewModel.swift */; };
 		64A6724C2AD967F1007615B1 /* BookRepositoryDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6724B2AD967F1007615B1 /* BookRepositoryDataSourceTests.swift */; };
+		64CEDD802ADD2DE1000D39C3 /* ChapterListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CEDD7F2ADD2DE1000D39C3 /* ChapterListViewModelTests.swift */; };
+		64CEDD822ADD32FB000D39C3 /* MockBookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CEDD812ADD32FB000D39C3 /* MockBookRepository.swift */; };
+		64CEDD862ADD4FA6000D39C3 /* PageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CEDD852ADD4FA6000D39C3 /* PageViewModelTests.swift */; };
+		64CEDD882ADD5653000D39C3 /* MockDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CEDD872ADD5653000D39C3 /* MockDataSource.swift */; };
+		64CEDD8A2ADD5CDE000D39C3 /* BookRepositoryDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CEDD892ADD5CDE000D39C3 /* BookRepositoryDataSourceProtocol.swift */; };
+		64CEDD8C2ADD6713000D39C3 /* BookRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CEDD8B2ADD6713000D39C3 /* BookRepositoryTests.swift */; };
+		64CEDD8E2ADE53DF000D39C3 /* HomeViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CEDD8D2ADE53DF000D39C3 /* HomeViewUITests.swift */; };
+		64CEDD902ADE55E8000D39C3 /* PageViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CEDD8F2ADE55E8000D39C3 /* PageViewUITests.swift */; };
+		64CEDD932ADE660B000D39C3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CEDD922ADE660B000D39C3 /* Constants.swift */; };
+		64CEDD952ADE7936000D39C3 /* ChapterListViewUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CEDD942ADE7936000D39C3 /* ChapterListViewUITest.swift */; };
+		64CEDD992ADE8C2C000D39C3 /* VerseContentViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CEDD982ADE8C2C000D39C3 /* VerseContentViewUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +67,6 @@
 		64A671F72AD96743007615B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64A671FA2AD96743007615B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64A672002AD96744007615B1 /* ReadGitaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadGitaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		64A672042AD96744007615B1 /* ReadGitaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadGitaTests.swift; sourceTree = "<group>"; };
 		64A6720A2AD96744007615B1 /* ReadGitaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadGitaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A6720E2AD96744007615B1 /* ReadGitaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadGitaUITests.swift; sourceTree = "<group>"; };
 		64A672102AD96744007615B1 /* ReadGitaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadGitaUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -76,12 +84,22 @@
 		64A6722E2AD967AE007615B1 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		64A6722F2AD967AE007615B1 /* ChapterContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterContentView.swift; sourceTree = "<group>"; };
 		64A672302AD967AE007615B1 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		64A672312AD967AE007615B1 /* ChapterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterView.swift; sourceTree = "<group>"; };
 		64A672322AD967AE007615B1 /* ChapterListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterListView.swift; sourceTree = "<group>"; };
 		64A672332AD967AE007615B1 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		64A672352AD967AE007615B1 /* ChapterListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterListViewModel.swift; sourceTree = "<group>"; };
 		64A672362AD967AE007615B1 /* PageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewModel.swift; sourceTree = "<group>"; };
 		64A6724B2AD967F1007615B1 /* BookRepositoryDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRepositoryDataSourceTests.swift; sourceTree = "<group>"; };
+		64CEDD7F2ADD2DE1000D39C3 /* ChapterListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListViewModelTests.swift; sourceTree = "<group>"; };
+		64CEDD812ADD32FB000D39C3 /* MockBookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBookRepository.swift; sourceTree = "<group>"; };
+		64CEDD852ADD4FA6000D39C3 /* PageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewModelTests.swift; sourceTree = "<group>"; };
+		64CEDD872ADD5653000D39C3 /* MockDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataSource.swift; sourceTree = "<group>"; };
+		64CEDD892ADD5CDE000D39C3 /* BookRepositoryDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRepositoryDataSourceProtocol.swift; sourceTree = "<group>"; };
+		64CEDD8B2ADD6713000D39C3 /* BookRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRepositoryTests.swift; sourceTree = "<group>"; };
+		64CEDD8D2ADE53DF000D39C3 /* HomeViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewUITests.swift; sourceTree = "<group>"; };
+		64CEDD8F2ADE55E8000D39C3 /* PageViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewUITests.swift; sourceTree = "<group>"; };
+		64CEDD922ADE660B000D39C3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		64CEDD942ADE7936000D39C3 /* ChapterListViewUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListViewUITest.swift; sourceTree = "<group>"; };
+		64CEDD982ADE8C2C000D39C3 /* VerseContentViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseContentViewUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +174,11 @@
 			isa = PBXGroup;
 			children = (
 				64A6724B2AD967F1007615B1 /* BookRepositoryDataSourceTests.swift */,
-				64A672042AD96744007615B1 /* ReadGitaTests.swift */,
+				64CEDD7F2ADD2DE1000D39C3 /* ChapterListViewModelTests.swift */,
+				64CEDD812ADD32FB000D39C3 /* MockBookRepository.swift */,
+				64CEDD852ADD4FA6000D39C3 /* PageViewModelTests.swift */,
+				64CEDD872ADD5653000D39C3 /* MockDataSource.swift */,
+				64CEDD8B2ADD6713000D39C3 /* BookRepositoryTests.swift */,
 			);
 			path = ReadGitaTests;
 			sourceTree = "<group>";
@@ -164,8 +186,13 @@
 		64A6720D2AD96744007615B1 /* ReadGitaUITests */ = {
 			isa = PBXGroup;
 			children = (
+				64CEDD912ADE65F9000D39C3 /* UITestUtils */,
 				64A6720E2AD96744007615B1 /* ReadGitaUITests.swift */,
 				64A672102AD96744007615B1 /* ReadGitaUITestsLaunchTests.swift */,
+				64CEDD8D2ADE53DF000D39C3 /* HomeViewUITests.swift */,
+				64CEDD8F2ADE55E8000D39C3 /* PageViewUITests.swift */,
+				64CEDD942ADE7936000D39C3 /* ChapterListViewUITest.swift */,
+				64CEDD982ADE8C2C000D39C3 /* VerseContentViewUITests.swift */,
 			);
 			path = ReadGitaUITests;
 			sourceTree = "<group>";
@@ -176,6 +203,7 @@
 				64A6721E2AD967AE007615B1 /* BookRepositoryProtocol.swift */,
 				64A6721F2AD967AE007615B1 /* BookRepository.swift */,
 				64A672202AD967AE007615B1 /* BookRepositoryDataSource.swift */,
+				64CEDD892ADD5CDE000D39C3 /* BookRepositoryDataSourceProtocol.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -204,7 +232,6 @@
 			children = (
 				64A6722B2AD967AE007615B1 /* Components */,
 				64A6722A2AD967AE007615B1 /* HomeView.swift */,
-				64A672312AD967AE007615B1 /* ChapterView.swift */,
 				64A672322AD967AE007615B1 /* ChapterListView.swift */,
 				64A672332AD967AE007615B1 /* PageView.swift */,
 			);
@@ -230,6 +257,14 @@
 				64A672362AD967AE007615B1 /* PageViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		64CEDD912ADE65F9000D39C3 /* UITestUtils */ = {
+			isa = PBXGroup;
+			children = (
+				64CEDD922ADE660B000D39C3 /* Constants.swift */,
+			);
+			path = UITestUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,12 +398,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A672442AD967AE007615B1 /* ChapterContentView.swift in Sources */,
-				64A672462AD967AE007615B1 /* ChapterView.swift in Sources */,
 				64A672492AD967AE007615B1 /* ChapterListViewModel.swift in Sources */,
 				64A672422AD967AE007615B1 /* BackButtonView.swift in Sources */,
 				64A672432AD967AE007615B1 /* GradientView.swift in Sources */,
 				64A672482AD967AE007615B1 /* PageView.swift in Sources */,
 				64A672452AD967AE007615B1 /* LoadingView.swift in Sources */,
+				64CEDD8A2ADD5CDE000D39C3 /* BookRepositoryDataSourceProtocol.swift in Sources */,
 				64A6723D2AD967AE007615B1 /* Verses.swift in Sources */,
 				64A671F42AD96741007615B1 /* ReadGitaApp.swift in Sources */,
 				64A6724A2AD967AE007615B1 /* PageViewModel.swift in Sources */,
@@ -389,8 +424,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64A672052AD96744007615B1 /* ReadGitaTests.swift in Sources */,
+				64CEDD882ADD5653000D39C3 /* MockDataSource.swift in Sources */,
+				64CEDD822ADD32FB000D39C3 /* MockBookRepository.swift in Sources */,
+				64CEDD862ADD4FA6000D39C3 /* PageViewModelTests.swift in Sources */,
+				64CEDD8C2ADD6713000D39C3 /* BookRepositoryTests.swift in Sources */,
 				64A6724C2AD967F1007615B1 /* BookRepositoryDataSourceTests.swift in Sources */,
+				64CEDD802ADD2DE1000D39C3 /* ChapterListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,8 +437,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64CEDD932ADE660B000D39C3 /* Constants.swift in Sources */,
 				64A672112AD96744007615B1 /* ReadGitaUITestsLaunchTests.swift in Sources */,
+				64CEDD992ADE8C2C000D39C3 /* VerseContentViewUITests.swift in Sources */,
+				64CEDD952ADE7936000D39C3 /* ChapterListViewUITest.swift in Sources */,
+				64CEDD902ADE55E8000D39C3 /* PageViewUITests.swift in Sources */,
 				64A6720F2AD96744007615B1 /* ReadGitaUITests.swift in Sources */,
+				64CEDD8E2ADE53DF000D39C3 /* HomeViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +690,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2RZ34T7U35;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = demo.ReadGitaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -664,6 +709,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2RZ34T7U35;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = demo.ReadGitaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

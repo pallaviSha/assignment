@@ -33,5 +33,4 @@ struct Chapter : Codable {
 		name_meaning = try values.decodeIfPresent(String.self, forKey: .name_meaning)
 		chapter_summary = try values.decodeIfPresent(String.self, forKey: .chapter_summary)
 	}
-
 }

@@ -38,6 +38,7 @@ struct VerseContentView: View {
                         .multilineTextAlignment(.center)
                 }
             }
+            .accessibilityIdentifier("verseContentScrollView")
         }
         .padding(20)
         .navigationBarBackButtonHidden(true)

@@ -8,7 +8,7 @@
 import Foundation
 
 struct BookRepository {
-    let dataSource : BookRepositoryDataSource
+    let dataSource : BookRepositoryDataSourceProtocol
 }
 
 extension BookRepository : BookRepositoryProtocol {
@@ -35,5 +35,4 @@ extension BookRepository : BookRepositoryProtocol {
             completion(result)
         }
     }
-    
 }
