@@ -13,7 +13,7 @@ protocol BookRepositoryDataSourceProtocol {
 
     func getBookAllVerses(chapterNo: String , completion: @escaping (Result<[Verses] , Error>) -> Void)
 
-    func getBookPerticularVerses(chapterNo: String , versesNo: String , completion: @escaping (Result<Verses , Error>) -> Void)
+    func getBookParticularVerses(chapterNo: String , versesNo: String , completion: @escaping (Result<Verses , Error>) -> Void)
 
-    func getPerticularBook(chapterNo: String , completion: @escaping (Result<Chapter , Error>) -> Void)
+    func getParticularBook(chapterNo: String , completion: @escaping (Result<Chapter , Error>) -> Void)
 }

@@ -19,7 +19,7 @@ extension BookRepository : BookRepositoryProtocol {
     }
     
     func getPerticularChapter(_ chapterNo: String, completion: @escaping (Result<Chapter, Error>) -> Void) {
-        dataSource.getPerticularBook(chapterNo: chapterNo) { result in
+        dataSource.getParticularBook(chapterNo: chapterNo) { result in
             completion(result)
         }
     }
@@ -31,7 +31,7 @@ extension BookRepository : BookRepositoryProtocol {
     }
     
     func getPerticularVerseOfChapter(_ chapterNo: String, _ versesNo: String, completion: @escaping (Result<Verses, Error>) -> Void) {
-        dataSource.getBookPerticularVerses(chapterNo: chapterNo, versesNo: versesNo) { result in
+        dataSource.getBookParticularVerses(chapterNo: chapterNo, versesNo: versesNo) { result in
             completion(result)
         }
     }

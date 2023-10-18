@@ -43,12 +43,4 @@ final class ChapterListViewUITest: XCTestCase {
             XCTAssertTrue(bg.exists)
         }
     }
-
-//    func testChapterListViewUI() {
-//        app.launch()
-//        let home = HomeView()
-//        app.buttons[Constant.chooseChapter].tap()
-//        let title = app.staticTexts[Constant.chapters]
-//        XCTAssertTrue(title.exists)
-//    }
 }

@@ -10,8 +10,6 @@
 		64A671F42AD96741007615B1 /* ReadGitaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A671F32AD96741007615B1 /* ReadGitaApp.swift */; };
 		64A671F82AD96743007615B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A671F72AD96743007615B1 /* Assets.xcassets */; };
 		64A671FB2AD96743007615B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A671FA2AD96743007615B1 /* Preview Assets.xcassets */; };
-		64A6720F2AD96744007615B1 /* ReadGitaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6720E2AD96744007615B1 /* ReadGitaUITests.swift */; };
-		64A672112AD96744007615B1 /* ReadGitaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A672102AD96744007615B1 /* ReadGitaUITestsLaunchTests.swift */; };
 		64A672372AD967AE007615B1 /* BookRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6721E2AD967AE007615B1 /* BookRepositoryProtocol.swift */; };
 		64A672382AD967AE007615B1 /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A6721F2AD967AE007615B1 /* BookRepository.swift */; };
 		64A672392AD967AE007615B1 /* BookRepositoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A672202AD967AE007615B1 /* BookRepositoryDataSource.swift */; };
@@ -68,8 +66,6 @@
 		64A671FA2AD96743007615B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64A672002AD96744007615B1 /* ReadGitaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadGitaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A6720A2AD96744007615B1 /* ReadGitaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadGitaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		64A6720E2AD96744007615B1 /* ReadGitaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadGitaUITests.swift; sourceTree = "<group>"; };
-		64A672102AD96744007615B1 /* ReadGitaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadGitaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		64A6721E2AD967AE007615B1 /* BookRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRepositoryProtocol.swift; sourceTree = "<group>"; };
 		64A6721F2AD967AE007615B1 /* BookRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
 		64A672202AD967AE007615B1 /* BookRepositoryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRepositoryDataSource.swift; sourceTree = "<group>"; };
@@ -187,8 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				64CEDD912ADE65F9000D39C3 /* UITestUtils */,
-				64A6720E2AD96744007615B1 /* ReadGitaUITests.swift */,
-				64A672102AD96744007615B1 /* ReadGitaUITestsLaunchTests.swift */,
 				64CEDD8D2ADE53DF000D39C3 /* HomeViewUITests.swift */,
 				64CEDD8F2ADE55E8000D39C3 /* PageViewUITests.swift */,
 				64CEDD942ADE7936000D39C3 /* ChapterListViewUITest.swift */,
@@ -438,11 +432,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				64CEDD932ADE660B000D39C3 /* Constants.swift in Sources */,
-				64A672112AD96744007615B1 /* ReadGitaUITestsLaunchTests.swift in Sources */,
 				64CEDD992ADE8C2C000D39C3 /* VerseContentViewUITests.swift in Sources */,
 				64CEDD952ADE7936000D39C3 /* ChapterListViewUITest.swift in Sources */,
 				64CEDD902ADE55E8000D39C3 /* PageViewUITests.swift in Sources */,
-				64A6720F2AD96744007615B1 /* ReadGitaUITests.swift in Sources */,
 				64CEDD8E2ADE53DF000D39C3 /* HomeViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

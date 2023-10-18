@@ -25,7 +25,7 @@ struct BookRepositoryDataSource: BookRepositoryDataSourceProtocol {
         return request
     }
 
-    private func getPerticularChapterNetworkRequest(_ chapterNo: String) -> NSMutableURLRequest? {
+    private func getParticularChapterNetworkRequest(_ chapterNo: String) -> NSMutableURLRequest? {
         var request: NSMutableURLRequest?
         if let url = URL.init(string: "\(Constant.baseURL)\(chapterNo)/") {
             request = NSMutableURLRequest(url: url)
@@ -41,7 +41,7 @@ struct BookRepositoryDataSource: BookRepositoryDataSourceProtocol {
         return request
     }
 
-    private func getPerticularVersesNetworkRequest(_ chapterNo: String, _ versesNo: String) -> NSMutableURLRequest? {
+    private func getParticularVersesNetworkRequest(_ chapterNo: String, _ versesNo: String) -> NSMutableURLRequest? {
         var request: NSMutableURLRequest?
         if let url = URL.init(string: "\(Constant.baseURL)\(chapterNo)\(Constant.versesURL)\(versesNo)/") {
             request = NSMutableURLRequest(url: url)
@@ -110,8 +110,8 @@ struct BookRepositoryDataSource: BookRepositoryDataSourceProtocol {
         }
     }
 
-    func getBookPerticularVerses(chapterNo: String , versesNo: String , completion: @escaping (Result<Verses , Error>) -> Void){
-        guard let request = getPerticularVersesNetworkRequest(chapterNo, versesNo) else {
+    func getBookParticularVerses(chapterNo: String , versesNo: String , completion: @escaping (Result<Verses , Error>) -> Void){
+        guard let request = getParticularVersesNetworkRequest(chapterNo, versesNo) else {
             completion(.failure(NetworkError.invalidURL))
             return
         }
@@ -131,8 +131,8 @@ struct BookRepositoryDataSource: BookRepositoryDataSourceProtocol {
         }
     }
 
-    func getPerticularBook(chapterNo: String , completion: @escaping (Result<Chapter , Error>) -> Void){
-        guard let request = getPerticularChapterNetworkRequest(chapterNo) else {
+    func getParticularBook(chapterNo: String , completion: @escaping (Result<Chapter , Error>) -> Void){
+        guard let request = getParticularChapterNetworkRequest(chapterNo) else {
             completion(.failure(NetworkError.invalidURL))
             return
         }
