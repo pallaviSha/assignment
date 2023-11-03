@@ -14,6 +14,8 @@ class MockDataSource: BookRepositoryDataSourceProtocol {
     var getPerticularChapterResult: Result<Chapter, Error>?
     var getAllVersesResult: Result<[Verses], Error>?
     var getPerticularVerseResult: Result<Verses, Error>?
+    var getBookParticularVerses: Result<ReadGita.Verses, Error>?
+    var getParticularBook: Result<ReadGita.Chapter, Error>?
 
     func getBookAllChapters(completion: @escaping (Result<[Chapter], Error>) -> Void) {
         if let getAllChaptersResult = getAllChaptersResult {
@@ -21,7 +23,7 @@ class MockDataSource: BookRepositoryDataSourceProtocol {
         }
     }
 
-    func getPerticularBook(chapterNo: String, completion: @escaping (Result<Chapter, Error>) -> Void) {
+    func getParticularBook(chapterNo: String, completion: @escaping (Result<Chapter, Error>) -> Void) {
         if let getPerticularChapterResult = getPerticularChapterResult {
             completion(getPerticularChapterResult)
         }
@@ -33,7 +35,7 @@ class MockDataSource: BookRepositoryDataSourceProtocol {
         }
     }
 
-    func getBookPerticularVerses(chapterNo: String, versesNo: String, completion: @escaping (Result<Verses, Error>) -> Void) {
+    func getBookParticularVerses(chapterNo: String, versesNo: String, completion: @escaping (Result<Verses, Error>) -> Void) {
         if let getPerticularVerseResult = getPerticularVerseResult {
             completion(getPerticularVerseResult)
         }

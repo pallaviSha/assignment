@@ -70,7 +70,7 @@ final class BookRepositoryDataSourceTests: XCTestCase {
            let chapterNo = "1"
            let expectation = XCTestExpectation(description: "Fetch a particular chapter")
 
-           dataSource.getPerticularBook(chapterNo: chapterNo) { result in
+           dataSource.getParticularBook(chapterNo: chapterNo) { result in
                switch result {
                case .success(let chapter):
                    // Perform assertions on the returned chapter
